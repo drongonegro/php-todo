@@ -22,8 +22,6 @@
 
 			if (password_verify($password, $found_users[0]['password'])) {
 
-				session_start();
-
 				$_SESSION['name'] = $found_users[0]['name'];
 				$_SESSION['id'] = $found_users[0]['id'];
 
